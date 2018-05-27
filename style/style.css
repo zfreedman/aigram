@@ -15,6 +15,10 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
     --color-outline: var(--color-4);
 }
 
+.app_col {
+  height: 100vh;
+}
+
 .container {
   padding: 0 !important;
   margin: 0 !important;

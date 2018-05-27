@@ -8,17 +8,20 @@ import InfoBox from "./info_box";
 
 export default class App extends Component {
   render() {
+    //const show_grid = "show-grid ";
+    const show_grid = "";
+
     return (
       <div>
           <Grid>
-            <Row className="show-grid">
-              <Col md={2} className="match_bar">
+            <Row className={`${show_grid}`}>
+              <Col md={2} className="match_bar app_col">
                 <MatchBar />
               </Col>
-              <Col md={8} className="info_box">
+              <Col md={8} className="info_box app_col">
                 <InfoBox />
               </Col>
-              <Col md={2} className="settings_bar">
+              <Col md={2} className="settings_bar app_col">
                 <SettingsBar />
               </Col>
             </Row>
