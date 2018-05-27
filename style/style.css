@@ -1,3 +1,27 @@
+/*
+color palette for --color-[0,4] obtained from
+https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes/
+#4 So Many Lost Songs
+
+
+*/
+:root {
+    --color-0: #051e3e;
+    --color-1: #251e3e;
+    --color-2: #451e3e;
+    --color-3: #651e3e;
+    --color-4: #851e3e;
+    --color-text: white;
+}
+
+.container {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
 .info_box {
+  background-color: var(--color-1);
+  color: var(--color-text);
   text-align: center;
 }
