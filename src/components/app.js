@@ -12,13 +12,13 @@ export default class App extends Component {
       <div>
           <Grid>
             <Row className="show-grid">
-              <Col md={2}>
+              <Col md={2} className="match_bar">
                 <MatchBar />
               </Col>
-              <Col md={8}>
+              <Col md={8} className="info_box">
                 <InfoBox />
               </Col>
-              <Col md={2}>
+              <Col md={2} className="settings_bar">
                 <SettingsBar />
               </Col>
             </Row>

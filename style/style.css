@@ -18,10 +18,25 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
   padding: 0 !important;
   margin: 0 !important;
   width: 100% !important;
+  color: var(--color-text);
 }
 
 .info_box {
-  background-color: var(--color-1);
+  background-color: var(--color-2);
   color: var(--color-text);
   text-align: center;
+}
+
+.match_bar {
+  background-color: var(--color-1);
+}
+
+.match_search > input {
+  width: 100%;
+  padding: 0px 5px;
+  background-color: var(--color-0);
+}
+
+.settings_bar {
+  background-color: var(--color-3);
 }
