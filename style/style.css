@@ -12,6 +12,7 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
     --color-3: #651e3e;
     --color-4: #851e3e;
     --color-text: white;
+    --color-outline: var(--color-4);
 }
 
 .container {
@@ -31,10 +32,20 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
   background-color: var(--color-1);
 }
 
+.match_bar > h3 {
+  text-align: center;
+}
+
 .match_search > input {
   width: 100%;
   padding: 0px 5px;
   background-color: var(--color-0);
+  border: none;
+}
+
+.match_search > input:focus {
+  border: none;
+  outline: 2px solid var(--color-outline);
 }
 
 .settings_bar {
