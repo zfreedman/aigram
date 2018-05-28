@@ -29,8 +29,10 @@ export default class App extends Component {
           <Grid>
             <Row className={`${show_grid}`}>
               <Col md={2} className="match_bar app_col">
-                //passing props from App to MatchBar ...
-                //MatchBar should pass to MatchList
+                {
+                  //passing props from App to MatchBar ...
+                  //MatchBar should pass to MatchList
+                }
                 <MatchBar matches={this.state.matches} />
               </Col>
               <Col md={8} className="info_box app_col">
