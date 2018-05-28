@@ -14,6 +14,7 @@ class MatchSearch extends Component {
       <div className="match_search">
         <input
           placeholder={"Search"}
+          value={this.state.filter}
           onChange = {event => this.setState({ filter: event.target.value })}
           />
       </div>

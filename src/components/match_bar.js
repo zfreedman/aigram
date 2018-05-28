@@ -9,9 +9,9 @@ class MatchBar extends Component {
   render() {
     return (
       <div className="match_bar">
-        <h3>Matches</h3>
+        <h3>Matches({this.props.matches.length})</h3>
         <MatchSearch />
-        <MatchList />
+        <MatchList matches={this.props.matches}/>
       </div>
     );
   }
