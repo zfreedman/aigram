@@ -10,6 +10,11 @@ class MatchListItem extends Component {
           <b>{this.props.match.name}</b>
           <p>Hey</p>
         </div>
+        <div className="match_list_item_info">Ohhaio
+          {
+            //<p class="match_list_item_dist">{this.props.match.dist}</p>
+          }
+        </div>
       </li>
     );
   }
