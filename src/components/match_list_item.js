@@ -8,11 +8,16 @@ class MatchListItem extends Component {
         <img src={this.props.match.img} />
         <div className="match_list_item_text">
           <b>{this.props.match.name}</b>
-          <p>Hey</p>
+          <p>Hey there De...</p>
         </div>
-        <div className="match_list_item_info">Ohhaio
+        <div className="match_list_item_info">
+          <div className="match_list_item_dist">
+            {this.props.match.dist}
+          </div>
+          <div className="match_list_item_time">
+            <i>3 min</i>
+          </div>
           {
-            //<p class="match_list_item_dist">{this.props.match.dist}</p>
           }
         </div>
       </li>
