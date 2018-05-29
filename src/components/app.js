@@ -13,9 +13,9 @@ export default class App extends Component {
     this.state = {
       //as of right now matches should be passed down to MatchList
       matches: [
-        {name: "Alice", dist: "5 mi"},
-        {name: "Brittney", dist: "11 mi"},
-        {name: "Candace", dist: "8 mi"}
+        {name: "Alice", dist: "5 mi", img: "https://pbs.twimg.com/profile_images/739247958340698114/fVKY9fOv.jpg"},
+        {name: "Brittney", dist: "11 mi", img: "https://pbs.twimg.com/profile_images/803217914337828864/99oo37KN_400x400.jpg"},
+        {name: "Candace", dist: "8 mi", img: "http://dailypost.ng/wp-content/uploads/2018/01/Ugochi-Ihezue.jpg"}
       ]
     }
   }

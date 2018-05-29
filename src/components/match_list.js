@@ -5,7 +5,6 @@ class MatchList extends Component {
   render() {
     return (
       <div>
-        Match List
         <ul className="match_list">
           {
             // render each match as a MatchListItem

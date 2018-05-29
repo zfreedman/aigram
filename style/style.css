@@ -13,6 +13,8 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
     --color-4: #851e3e;
     --color-text: white;
     --color-outline: var(--color-4);
+
+    --match-list-item-height: 80px;
 }
 
 .app_col {
@@ -41,6 +43,30 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
 }
 
 .match_list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/*flexbox align-items https://internetingishard.com/html-and-css/flexbox/*/
+.match_list_item {
+  height: var(--match-list-item-height);
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.match_list_item > img, .match_list_item_text {
+  float: left;
+  margin-left: 5px;
+}
+
+.match_list_item > img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.match_list_item_text > p {
+  margin: 0;
 }
 
 .match_search > input {
