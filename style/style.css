@@ -11,10 +11,9 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
     --color-2: #451e3e;
     --color-3: #651e3e;
     --color-4: #851e3e;
-    --color-text: white;
-    --color-outline: var(--color-4);
-
     --match-list-item-height: 80px;
+    --color-outline: var(--color-4);
+    --color-text: white;
 }
 
 .app_col {
@@ -22,10 +21,10 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
 }
 
 .container {
-  padding: 0 !important;
-  margin: 0 !important;
-  width: 100% !important;
   color: var(--color-text);
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
 }
 
 .info_box {
@@ -36,6 +35,7 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
 
 .match_bar {
   background-color: var(--color-1);
+  padding: 0 5px;
 }
 
 .match_bar > h3 {
@@ -49,15 +49,13 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
 
 /*flexbox align-items https://internetingishard.com/html-and-css/flexbox/*/
 .match_list_item {
-  height: var(--match-list-item-height);
-  border: 1px solid red;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: var(--match-list-item-height);
 }
 
-.match_list_item > img, .match_list_item_text {
-  float: left;
-  margin-left: 5px;
+.match_list_item:not(:first-child) {
+  border-top: 1px solid var(--color-text);
 }
 
 .match_list_item > img {
@@ -65,8 +63,17 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
   border-radius: 50%;
 }
 
+.match_list_item > img, .match_list_item_text {
+  float: left;
+  margin-left: 5px;
+}
+
 .match_list_item_text > p {
   margin: 0;
+}
+
+.match_search {
+  padding-bottom: 10px;
 }
 
 .match_search > input {
@@ -74,6 +81,7 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
   padding: 0px 5px;
   background-color: var(--color-0);
   border: none;
+  height: 30px;
 }
 
 .match_search > input:focus {
