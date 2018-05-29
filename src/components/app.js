@@ -15,7 +15,12 @@ export default class App extends Component {
       matches: [
         {name: "Alice", dist: "5 mi", img: "https://pbs.twimg.com/profile_images/739247958340698114/fVKY9fOv.jpg"},
         {name: "Brittney", dist: "11 mi", img: "https://pbs.twimg.com/profile_images/803217914337828864/99oo37KN_400x400.jpg"},
-        {name: "Candace", dist: "8 mi", img: "http://dailypost.ng/wp-content/uploads/2018/01/Ugochi-Ihezue.jpg"}
+        {name: "Candace", dist: "8 mi", img: "http://dailypost.ng/wp-content/uploads/2018/01/Ugochi-Ihezue.jpg"},
+        {name: "Denise", dist: "42 mi", img: "http://www.fotothing.com/photos/1b3/1b3a599726df89c8a665b2993591459e.jpg"},
+        {name: "Emily", dist: "3 mi", img: "https://ae01.alicdn.com/kf/HTB199DpXTZRMeJjSspkq6xGpXXaU/New-Women-Bras-Girl-Racerback-Bra-Seamless-Wireless-Underwear-Bra-Best-XM.jpg"},
+        {name: "Fran", dist: "107 mi", img: "https://images.pexels.com/photos/654690/pexels-photo-654690.jpeg?auto=compress&cs=tinysrgb&h=350"},
+        {name: "Gabby", dist: "2921 mi", img: "https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/05/shayanna-jenkins-hernandez.jpg?crop=236px%2C0px%2C1565px%2C1564px&resize=400%2C400&ssl=1"},
+        {name: "Heather", dist: "22 mi", img: "https://www.dunkindonuts.com/content/dam/dd/img/heros-lifestyle/standard/hero-perks-lp-surprisedgirl-640x640.jpg"}
       ]
     }
   }

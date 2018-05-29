@@ -45,6 +45,8 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
 .match_list {
   list-style-type: none;
   padding-left: 0;
+  height: 80vh;
+  overflow-y: auto;
 }
 
 /*flexbox align-items https://internetingishard.com/html-and-css/flexbox/*/
