@@ -27,7 +27,7 @@ export default class App extends Component {
     return (
       <div>
           <Grid>
-            <Row className={`${show_grid}`}>
+            <Row className={`${show_grid} row_no_padding`}>
               <Col md={2} className="match_bar app_col">
                 {
                   //passing props from App to MatchBar ...

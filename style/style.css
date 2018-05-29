@@ -81,6 +81,19 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
   outline: 2px solid var(--color-outline);
 }
 
+/*
+https://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+*/
+.row_no_padding {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.row_no_padding > .col-md-2, .row_no_padding > .col-md-8 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .settings_bar {
   background-color: var(--color-3);
 }
