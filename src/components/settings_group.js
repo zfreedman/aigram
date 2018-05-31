@@ -9,7 +9,11 @@ class SettingsGroup extends Component {
         <h4>{this.props.setting.name}</h4>
         {
           this.props.setting.arr.map((item) => {
-            return <SettingsGroupItem key={item.name} item={item} />;
+            return <SettingsGroupItem
+              key={item.name}
+              item={item}
+              group={this.props.setting.name}
+              />;
           })
         }
       </div>

@@ -1,0 +1,2 @@
+export const INPUT_SLIDER = "INPUT_SLIDER";
+export const INPUT_CHECKBOX = "INPUT_CHECKBOX";
