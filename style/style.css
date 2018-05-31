@@ -14,10 +14,11 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
     --match-list-item-height: 80px;
     --color-outline: var(--color-4);
     --color-text: white;
+    --app-col-height: 100vh;
 }
 
 .app_col {
-  height: 100vh;
+  height: var(--app-col-height);
 }
 
 .container {
@@ -40,6 +41,15 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
 
 .match_bar > h3 {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.match_bar > h3 > div {
+}
+
+.match_bar_match_count {
+
 }
 
 .match_list {
@@ -148,4 +158,8 @@ https://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-boot
 
 .settings_bar {
   background-color: var(--color-3);
+}
+
+.settings_bar > h3 {
+  text-align: center;
 }
