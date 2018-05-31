@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Glyphicon } from "react-bootstrap";
 
-import MatchSearch from "./match_search";
 import MatchList from "./match_list.js";
+import SearchComponent from "./search_component";
 //class used to display all matches
 //  - filter search Bar
 //  - match list
 class MatchBar extends Component {
   render() {
     return (
-      <div className="match_bar">
+      <div className="app_col_inner">
         <h3>
           <div>
             <Glyphicon glyph="user" />
@@ -18,7 +18,7 @@ class MatchBar extends Component {
             ({this.props.matches.length})
           </div>
         </h3>
-        <MatchSearch />
+        <SearchComponent />
         <MatchList matches={this.props.matches}/>
       </div>
     );

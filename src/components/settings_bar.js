@@ -8,7 +8,7 @@ import { Glyphicon } from "react-bootstrap";
 class SettingsBar extends Component {
   render() {
     return (
-      <div className="settings_bar">
+      <div className="app_col_inner">
         <h3>
           <Glyphicon glyph="cog" />
         </h3>

@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { Glyphicon } from "react-bootstrap";
 
-//class used to filter current matches
-//  - based on name
-class MatchSearch extends Component {
+//class used to perform searches/filters
+class SearchComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -24,4 +23,4 @@ class MatchSearch extends Component {
   }
 }
 
-export default MatchSearch;
+export default SearchComponent;

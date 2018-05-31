@@ -21,6 +21,16 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
   height: var(--app-col-height);
 }
 
+.app_col_inner {
+  padding: 0 5px;
+}
+
+.app_col_inner > h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .container {
   color: var(--color-text);
   margin: 0 !important;
@@ -36,13 +46,6 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
 
 .match_bar {
   background-color: var(--color-1);
-  padding: 0 5px;
-}
-
-.match_bar > h3 {
-  text-align: center;
-  display: flex;
-  justify-content: center;
 }
 
 .match_list {
