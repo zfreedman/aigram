@@ -4,7 +4,7 @@ class SettingsGroup extends Component {
   render() {
     return (
       <div>
-        {this.props.cog.name}
+        {this.props.setting.name}
       </div>
     );
   }
