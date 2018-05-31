@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Glyphicon } from "react-bootstrap";
 
 //class used to filter current matches
 //  - based on name
@@ -12,8 +13,9 @@ class MatchSearch extends Component {
   render() {
     return (
       <div className="match_search">
+        <Glyphicon glyph="search" />
         <input
-          placeholder={"Search"}
+          placeholder="Search"
           value={this.state.filter}
           onChange = {event => this.setState({ filter: event.target.value })}
           />

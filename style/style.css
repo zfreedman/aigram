@@ -45,13 +45,6 @@ https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes
   justify-content: center;
 }
 
-.match_bar > h3 > div {
-}
-
-.match_bar_match_count {
-
-}
-
 .match_list {
   list-style-type: none;
   padding-left: 0;
@@ -127,15 +120,22 @@ https://codepen.io/anon/pen/aKbRvX
 }
 
 .match_search {
+  align-items: center;
+  display: flex;
   padding-bottom: 10px;
 }
 
+.match_search > span {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
 .match_search > input {
-  width: 100%;
-  padding: 0px 5px;
   background-color: var(--color-0);
   border: none;
   height: 30px;
+  padding: 0px 5px;
+  width: 100%;
 }
 
 .match_search > input:focus {
