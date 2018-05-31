@@ -24,8 +24,25 @@ export default class App extends Component {
       ],
       //as of right now settings should be passed down to SettingsList
       settings: [
-        {name: "Gender"},
-        {name: "Location"}
+        {
+          name: "Gender",
+          arr: [
+            {
+              name: "Want"
+            },
+            {
+              name: "Am"
+            }
+          ]
+        },
+        {
+          name: "Location",
+          arr: [
+            {
+              name: "Want"
+            }
+          ]
+        }
       ]
     }
   }
@@ -36,23 +53,23 @@ export default class App extends Component {
 
     return (
       <div>
-          <Grid>
-            <Row className={`${show_grid} row_no_padding`}>
-              <Col md={2} className="match_bar app_col">
-                {
-                  //passing props from App to MatchBar ...
-                  //MatchBar should pass to MatchList
-                }
-                <MatchBar matches={this.state.matches} />
-              </Col>
-              <Col md={8} className="info_box app_col">
-                <InfoBox />
-              </Col>
-              <Col md={2} className="settings_bar app_col">
-                <SettingsBar settings={this.state.settings} />
-              </Col>
-            </Row>
-          </Grid>
+        <Grid>
+          <Row className={`${show_grid} row_no_padding`}>
+            <Col md={2} className="match_bar app_col">
+              {
+                //passing props from App to MatchBar ...
+                //MatchBar should pass to MatchList
+              }
+              <MatchBar matches={this.state.matches} />
+            </Col>
+            <Col md={8} className="info_box app_col">
+              <InfoBox />
+            </Col>
+            <Col md={2} className="settings_bar app_col">
+              <SettingsBar settings={this.state.settings} />
+            </Col>
+          </Row>
+        </Grid>
       </div>
     );
   }

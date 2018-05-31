@@ -8,7 +8,7 @@ class SettingsList extends Component {
       <div>
         {
           this.props.settings.map((setting) => {
-            return <SettingsGroup key={setting.name} cog={setting} />;
+            return <SettingsGroup key={setting.name} setting={setting} />;
           })
         }
       </div>
