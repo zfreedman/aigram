@@ -19,7 +19,7 @@ class MatchBar extends Component {
           </div>
         </h3>
         <SearchComponent />
-        <MatchList matches={this.props.matches}/>
+        <MatchList matches={this.props.matches} />
       </div>
     );
   }

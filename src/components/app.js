@@ -21,6 +21,11 @@ export default class App extends Component {
         {name: "Fran", dist: "107 mi", img: "https://images.pexels.com/photos/654690/pexels-photo-654690.jpeg?auto=compress&cs=tinysrgb&h=350"},
         {name: "Gabby", dist: "2921 mi", img: "https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/05/shayanna-jenkins-hernandez.jpg?crop=236px%2C0px%2C1565px%2C1564px&resize=400%2C400&ssl=1"},
         {name: "Heather", dist: "22 mi", img: "https://www.dunkindonuts.com/content/dam/dd/img/heros-lifestyle/standard/hero-perks-lp-surprisedgirl-640x640.jpg"}
+      ],
+      //as of right now settings should be passed down to SettingsList
+      settings: [
+        {name: "Gender"},
+        {name: "Location"}
       ]
     }
   }
@@ -44,7 +49,7 @@ export default class App extends Component {
                 <InfoBox />
               </Col>
               <Col md={2} className="settings_bar app_col">
-                <SettingsBar />
+                <SettingsBar settings={this.state.settings} />
               </Col>
             </Row>
           </Grid>
