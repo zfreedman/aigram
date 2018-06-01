@@ -5,6 +5,7 @@ import { Grid, Row, Col} from "react-bootstrap";
 import MatchBar from "./match_bar";
 import SettingsBar from "./settings_bar";
 import InfoBox from "./info_box";
+import { INPUT_CHECKBOX, INPUT_RADIO, INPUT_SLIDER } from "./settings_types";
 
 export default class App extends Component {
   constructor(props) {
@@ -25,13 +26,28 @@ export default class App extends Component {
       //as of right now settings should be passed down to SettingsList
       settings: [
         {
+          name: "Age",
+          arr: [
+            {
+              name: "Want",
+              type: INPUT_SLIDER
+            },
+            {
+              name: "Am",
+              type: null
+            }
+          ]
+        },
+        {
           name: "Gender",
           arr: [
             {
-              name: "Want"
+              name: "Want",
+              type: INPUT_CHECKBOX
             },
             {
-              name: "Am"
+              name: "Am",
+              type: INPUT_RADIO
             }
           ]
         },
@@ -39,7 +55,8 @@ export default class App extends Component {
           name: "Location",
           arr: [
             {
-              name: "Want"
+              name: "Want",
+              type: INPUT_SLIDER
             }
           ]
         }

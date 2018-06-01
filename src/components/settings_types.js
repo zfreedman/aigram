@@ -1,2 +1,3 @@
 export const INPUT_SLIDER = "INPUT_SLIDER";
 export const INPUT_CHECKBOX = "INPUT_CHECKBOX";
+export const INPUT_RADIO = "INPUT_RADIO";
